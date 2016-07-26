@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    window.onload=function(){
+        var dog1=new dog("虎子",3,"拉布拉多");
+        dog1.say();
+    }
+    function dog(name,age,type){
+        this.name=name;
+        this.age=age;
+        this.type=type;
+    };
+    dog.prototype.say= function () {
+        alert("我叫"+this.name+",是"+this.type+"犬，今年"+this.age+"岁了");
+    };
+</script>
+</body>
+</html>
